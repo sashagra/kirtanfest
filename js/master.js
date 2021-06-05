@@ -41,16 +41,16 @@ jQuery( document ).ready( function( $ ) {
 	});
 	
 	// Counter
-	var endDate = "August 7, 2017 22:00:00";
+	var endDate = "August 17, 2021 17:00:00";
 	
 	$('.countdown.styled').countdown({
 	  date: endDate,
 	  render: function(data) {
 		  var years = this.leadingZeros(data.years, 2);
 		  if (years != '00') {
-		$(this.el).html("<div><span>" + this.leadingZeros(data.years, 2) + " </span><strong>years</strong></div><div><span>" + this.leadingZeros(data.days, 3) + " </span><strong>days</strong></div><div><span>" + this.leadingZeros(data.hours, 2) + "  </span><strong>hrs</strong></div><div><span>" + this.leadingZeros(data.min, 2) + "</span><strong>min</strong></div><div><span>" + this.leadingZeros(data.sec, 2) + " </span><strong>sec</strong></div>");
+		$(this.el).html("<div><span>" + this.leadingZeros(data.years, 2) + " </span><strong>лет</strong></div><div><span>" + this.leadingZeros(data.days, 3) + " </span><strong>дней</strong></div><div><span>" + this.leadingZeros(data.hours, 2) + "  </span><strong>часов</strong></div><div><span>" + this.leadingZeros(data.min, 2) + "</span><strong>минут</strong></div><div><span>" + this.leadingZeros(data.sec, 2) + " </span><strong>секунд</strong></div>");
 		  } else {
-		  $(this.el).html("<div><span>" + this.leadingZeros(data.days, 3) + " </span><strong>days</strong></div><div><span>" + this.leadingZeros(data.hours, 2) + "  </span><strong>hrs</strong></div><div><span>" + this.leadingZeros(data.min, 2) + "</span><strong>min</strong></div><div><span>" + this.leadingZeros(data.sec, 2) + " </span><strong>sec</strong></div>");
+		  $(this.el).html("<div><span>" + this.leadingZeros(data.days, 3) + " </span><strong>дней</strong></div><div><span>" + this.leadingZeros(data.hours, 2) + "  </span><strong>часов</strong></div><div><span>" + this.leadingZeros(data.min, 2) + "</span><strong>минут</strong></div><div><span>" + this.leadingZeros(data.sec, 2) + " </span><strong>секунд</strong></div>");
 		  }
 	  }
 	});
