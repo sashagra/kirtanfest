@@ -2335,3 +2335,7 @@ html, body, div, p, table, tr, td, th, tbody, tfoot, ul, li, ol, dl, dd, dt, fie
 	line-height:2.35em;
 }
 }
+
+iframe {
+	max-width: 100%;
+}
