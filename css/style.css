@@ -908,6 +908,9 @@ header.BGlight .navbar-default .navbar-nav > li:hover > a, header.BGlight .navba
 .guest2 {
 	background: url(../img/special_guest2.jpg) no-repeat left center;
 }
+.lucia {
+	background: url(../img/lucia.jpg) no-repeat left center;
+}
 .guest strong {
 	color: rgba(255, 255, 255, 0.7);
 	font-size: 1.15em;
@@ -1714,6 +1717,9 @@ h5 {
 #performers .page-block-full {
 	padding: 3em 3.65em 3em 7em;
 }
+#leaders .page-block-full {
+	padding: 3em 3.65em 3em 7em;
+}
 .experts .line {
 	top: 60.35%;
 }
@@ -1735,6 +1741,7 @@ html, body, div, p, table, tr, td, th, tbody, tfoot, ul, li, ol, dl, dd, dt, fie
 	margin-top: 23%;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 10rem;
 }
 .experts .line {
 	display: none;
@@ -1878,6 +1885,11 @@ header {
 	width: 100%;
 	margin: 38em 0 0;
 }
+#leaders > .guest > .row > div {
+	float: none;
+	width: 100%;
+	margin: 38em 0 0;
+}
 .guest {
 	background-position: center top;
 	background-size: 100%;
@@ -1971,6 +1983,15 @@ h3 {
 	margin: 38em 0 0;
 	padding-top:9.65em;
 }
+#leaders hr {
+	width: 100%;
+}
+#leaders > .guest > .row > div {
+	float: none;
+	width: 100%;
+	margin: 38em 0 0;
+	padding-top:9.65em;
+}
 .guest {
 	background-position: center top;
 }
@@ -2025,6 +2046,17 @@ h3 {
 .rightnav {
 	background-color: transparent;
 }
+
+}
+@media only screen and (max-width: 768px) {
+	.card-img-top {
+		max-width: 320px;
+		margin: 0 auto;
+	}
+	.card-title {
+		text-align: center;
+	}
+	
 }
 /* Desktops, Large Screen and laptops ----------- */
 @media only screen and (max-width: 767px) {
@@ -2041,6 +2073,9 @@ header .logo {
 	margin: 0;
 }
 #performers .page-block-full {
+	padding: 3em 3.65em;
+}
+#leaders .page-block-full {
 	padding: 3em 3.65em;
 }
 header {
@@ -2125,6 +2160,9 @@ header.BGlight .navbar-default .navbar-nav > li i {
 #performers > .guest > .row > div {
 	margin: 30em 0 0;
 }
+#leaders > .guest > .row > div {
+	margin: 30em 0 0;
+}
 .guest .sqaureIconPrime {
 	font-size: 3.35em;
 }
@@ -2186,10 +2224,14 @@ header.BGlight .navbar-default .navbar-nav > li i {
 #performers > .guest > .row > div {
 	margin-top: 23%;
 }
+#leaders > .guest > .row > div {
+	margin-top: 23%;
+}
 .join {
-	padding-left: 0.85em;
+	padding-left: 0;
 	font-size:3em;
 	line-height:2.35em;
+	background: none;
 }
 #contact .highlightBox {
 	background-attachment: scroll;
@@ -2261,6 +2303,10 @@ a.nav-expander {
 	font-size: 1.50em;
 }
 #performers > .guest > .row > div {
+	margin-top: 18em;
+	padding-top:5em;
+}
+#leaders > .guest > .row > div {
 	margin-top: 18em;
 	padding-top:5em;
 }
@@ -2357,4 +2403,39 @@ iframe {
 .schema:hover {
 	background-color: #333;
 	color: white;
+}
+
+.slide {
+	padding: 0;
+}
+
+#leaders hr {
+	width: 50%;
+}
+#leaders strong {
+	margin-left: 1.65em;
+}
+
+.BGorange {
+	background-color: #ff9000 !important;
+}
+
+.sqaureIconPrime.BGorange {
+	-webkit-box-shadow: 0 0 0 0.26em rgba(255, 144, 0, 0.5);
+	-moz-box-shadow: 0 0 0 0.26em rgba(255, 144, 0, 0.5);
+	box-shadow: 0 0 0 0.26em rgba(255, 144, 0, 0.5);
+}
+
+.card-body {
+	padding-top: 1rem;
+}
+
+.card {
+	margin: 2rem 4rem;
+}
+
+@media screen and (max-width: 480px) {
+	.card {
+		margin: 0 auto;
+	}
 }
