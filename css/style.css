@@ -2439,3 +2439,9 @@ iframe {
 		margin: 0 auto;
 	}
 }
+
+@media screen and (min-width: 1200px) {
+	.card {
+		padding: 0 3rem;
+	}
+}
