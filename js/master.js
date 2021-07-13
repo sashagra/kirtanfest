@@ -6,6 +6,23 @@
 
 jQuery( document ).ready( function( $ ) {
 "use strict";
+
+	function applyOptions() {
+
+		if (!OPTIONS.discount) {
+			[
+				document.getElementById('discount-menu-item'),
+				document.getElementById('offer'),
+			]
+			.forEach(el => el.classList.add('hidden'))
+		} else {
+			document.getElementById('discount-percents').innerText = OPTIONS.discountValue
+			document.getElementById('action-date').innerText = OPTIONS.dateAction
+
+		}
+
+	}
+	if (OPTIONS) applyOptions()
 	
 	//Preloader
 	$(window).load(function() {

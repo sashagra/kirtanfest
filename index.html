@@ -63,7 +63,7 @@
                   <li><a href="#performers" title="Особый гость"><i class="fa fa-star"></i> Особый гость</a></li>
                   <li><a href="#artist" title="Посмотреть участников"><i class="fa fa-users"></i> Участники</a></li>
                   <!-- <li><a href="#features" title="Features"><i class="fa fa-th"></i> Главное</a></li> -->
-                  <li><a href="#offer" title="Билеты со скидкой"><i class="fa fa-tags"></i> Акция</a></li>
+                  <li id="discount-menu-item"><a href="#offer" title="Билеты со скидкой"><i class="fa fa-tags"></i> Акция</a></li>
                   <li><a href="#pricing" title="Купить билет"><i class="fa fa-dollar"></i> Билеты</a></li>
                   <li><a href="#contact" title="Свяжитесь с нами"><i class="fa fa-map-marker"></i> Контакт</a></li>
                   <li><a href="#more" title="Смотреть еще"><i class="fa fa-plus"></i> Прочее</a> 
@@ -378,7 +378,7 @@
                   
                   <div class="tab-pane active" id="01">
                     <h3><i class="fa fa-music"></i>GoKirtan</h3>
-                    <iframe width="560" height="315" src="https://youtube.com/embed/uajNRrw_gzk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/XdXaDaAsbKA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     
                   </div><!-- end -->
                   
@@ -519,11 +519,11 @@
     <div class="row ">
         
       <div class="col-lg-4 col-md-5 col-sm-5 col-xs-12">
-        <h1>20</h1><h1 class="small">%<span>OFF</span></h1>
+        <h1 id="discount-percents">20</h1><h1 class="small">%<span>OFF</span></h1>
       </div>
       
       <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
-        <h3>Купите билет со скидкой до 12 июля</h3>
+        <h3>Купите билет со скидкой до <time id="action-date">12 июля</time></h3>
         <p class="big">Успейте приобрести билет по выгодной цене в любом секторе концертного зала.</p>
         <a class="btn btn-default smooth" href="https://bezkassira.by/muzykalnyj-immersivnyj-festival-kirtan-fest-11948/buy/" target="_blank" title="Приобрести билеты"><i class="fa fa-ticket"></i> Приобрести билеты</a>
       </div>
@@ -770,10 +770,9 @@
 <a href="#slides" class="top"><i class="fa fa-angle-up fa-lg"></i></a>
 
 <!--START SCRIPTS -->
+<script src="options.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/fancybox.umd.js"></script>
-<!-- <script src="http://maps.google.com/maps/api/js?sensor=false"></script>  -->
-<!-- <script src="js/directions.js"></script> -->
 <script src="js/bootstrap.min.js"></script>
 <script src="js/placeholders.js"></script>
 <script src="js/jquery.superslides.min.js"></script>
